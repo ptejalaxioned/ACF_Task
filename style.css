@@ -231,7 +231,6 @@ Header styling starts here
   text-transform: capitalize;
  }
  
- 
  header {
   width: 100%;
   position: absolute;
@@ -240,9 +239,7 @@ Header styling starts here
   background-color: var(--primary-color);
  }
  
- 
  h1 { padding-top: 14px; }
- 
  
  header .wrapper {
   width: 92%;
@@ -251,12 +248,10 @@ Header styling starts here
   justify-content: space-between;
  }
  
- 
  .header-left span {
   margin-left: 29px;
   font-size: 10px;
  }
- 
  
  .header-left h1 a {
   color: var(--secondary-color);
@@ -264,7 +259,6 @@ Header styling starts here
   font-weight: 900;
   line-height: 0;
  }
- 
  
  .header-left {
   width: 19%;
@@ -277,27 +271,21 @@ Header styling starts here
   justify-content: center;
  }
  
- 
  .all-caps { text-transform: uppercase; }
- 
  
  .header-right ul {
   display: flex;
   justify-content: space-between;
  }
  
- 
  .navbar {
   display: flex;
   justify-content: space-between;
  }
  
- 
  .header-right ul li { text-align: center; }
  
- 
  .header-right { width: 42%; }
- 
  
  .header-right {
   font-size: 14px;
@@ -305,28 +293,22 @@ Header styling starts here
   text-align: center;
  }
  
- 
  .header-right a { color: var(--secondary-color); }
- 
  
  .header-right a:hover {
   color: var(--tertiary-color);
   transition: 0.3s;
  }
  
- 
  .option-box p:hover::after {
   color: var(--tertiary-color);
   transition: 0.3s;
  }
  
- 
  .header-right { display: block; }
  /*=================================
   Header styling ends here
  =================================*/
- 
- 
  /*=================================
   main styling starts here
  =================================*/
@@ -337,11 +319,9 @@ Header styling starts here
   position: relative;
  }
  
- 
  .banner .wrapper {
   width: 100%;
  }
- 
  
  .banner .banner-content {
   display: flex;
@@ -355,32 +335,27 @@ Header styling starts here
   transform: translate(-50%, -50%);
  }
  
- 
  .banner .banner-buttons {
   padding: 30px 0 60px;
   display: flex;
   gap: 14px;
  }
  
- 
  .banner .banner-buttons .button {
   padding: 16px 48px;
   border-radius: 41px;
  }
- 
  
  .banner .banner-image {
   height: 100%;
   object-fit: cover;
  }
  
- 
  .banner h2 {
   color: var(--tertiary-color);
   font-size: 47px;
   font-weight: 900;
  }
- 
  
  .banner p {
   margin: 23px 0;
@@ -389,7 +364,6 @@ Header styling starts here
   line-height: 33px;
   text-align: center;
  }
- 
  
  .banner a {
   padding: 14px 25px;
@@ -400,7 +374,6 @@ Header styling starts here
   font-weight: 900;
   text-decoration: none;
  }
- 
  
  /*=================================
   banner styling ends here
@@ -413,7 +386,6 @@ Header styling starts here
  =================================*/
  footer { background-color: var(--primary-color); }
  
- 
  footer .wrapper {
   padding: 94px 0;
   display: flex;
@@ -421,12 +393,10 @@ Header styling starts here
   gap: 28px;
  }
  
- 
  footer .wrapper .footer-up {
   display: flex;
   gap: 40px;
  }
- 
  
  footer .wrapper .footer-down {
   display: flex;
@@ -435,11 +405,9 @@ Header styling starts here
   gap: 10px;
  }
  
- 
  footer .wrapper .footer-down p { font-size: 14px; }
  footer .wrapper .footer-down .footer-span { color: var(--secondary-color); }
  footer .wrapper .footer-list { padding: 20px 0; }
- 
  
  footer .wrapper .footer-list li {
   width: 100%;
@@ -449,9 +417,7 @@ Header styling starts here
   font-size: 14.5px;
  }
  
- 
  footer .wrapper .footer-list li:last-child { border: none; }
- 
  
  footer .wrapper h4 {
   color: var(--secondary-color);
@@ -459,19 +425,16 @@ Header styling starts here
   font-weight: 900;
  }
  
- 
  footer .wrapper .icon-list {
   display: flex;
   align-items: center;
   gap: 13px;
  }
  
- 
  footer .wrapper .icon-list a {
   display: flex;
   text-indent: -9999px;
  }
- 
  
  footer .wrapper .icon-list a::before {
   display: flex;
@@ -480,7 +443,6 @@ Header styling starts here
   font-size: 22px;
   text-indent: 0;
  }
- 
  
  footer .wrapper .icon-list .facebook::before { content: "\f09a"; }
  footer .wrapper .icon-list .instagram::before { content: "\f16d"; }
