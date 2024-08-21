@@ -1,0 +1,454 @@
+/*
+Theme Name: Shopping site 
+Author: Tejal Pagar
+Description: A Shopping Website.
+Version: 1.0
+*/
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 86%;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*=================================
+ Header styling starts here
+=================================*/
+:root {
+  --primary-color: #000;
+  --secondary-color: #f0f8ff;
+  --tertiary-color: #e25a3c;
+  --quaternary-color: #beb9b9de;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333b47;
+  text-transform: capitalize;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  z-index: 2;
+  background-color: var(--primary-color);
+}
+
+h1 { padding-top: 14px; }
+
+header .wrapper {
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left span {
+  margin-left: 29px;
+  font-size: 10px;
+}
+
+.header-left h1 a {
+  color: var(--secondary-color);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 0;
+}
+
+.header-left {
+  width: 19%;
+  height: 108px;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-caps { text-transform: uppercase; }
+
+.header-right ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-right ul li { text-align: center; }
+
+.header-right { width: 42%; }
+
+.header-right {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header-right a { color: var(--secondary-color); }
+
+.header-right a:hover {
+  color: var(--tertiary-color);
+  transition: 0.3s;
+}
+
+.option-box p:hover::after {
+  color: var(--tertiary-color);
+  transition: 0.3s;
+}
+
+.header-right { display: block; }
+/*=================================
+  Header styling ends here
+ =================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+/*=================================
+  banner styling ends here
+=================================*/
+.banner {
+  position: relative;
+}
+
+.banner .wrapper {
+  width: 100%;
+}
+
+.banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.banner .banner-buttons {
+  padding: 30px 0 60px;
+  display: flex;
+  gap: 14px;
+}
+
+.banner .banner-buttons .button {
+  padding: 16px 48px;
+  border-radius: 41px;
+}
+
+.banner .banner-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner h2 {
+  color: var(--tertiary-color);
+  font-size: 47px;
+  font-weight: 900;
+}
+
+.banner p {
+  margin: 23px 0;
+  color: #32333e;
+  font-size: 17px;
+  line-height: 33px;
+  text-align: center;
+}
+
+.banner a {
+  padding: 14px 25px;
+  border: 1.5px solid var(--tertiary-color);
+  border-radius: 3px;
+  display: inline-block;
+  color: var(--tertiary-color);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/*=================================
+  banner styling ends here
+=================================*/
+/*=================================
+  main styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
+=================================*/
+footer { background-color: var(--primary-color); }
+
+footer .wrapper {
+  padding: 94px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+footer .wrapper .footer-up {
+  display: flex;
+  gap: 40px;
+}
+
+footer .wrapper .footer-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .wrapper .footer-down p { font-size: 14px; }
+footer .wrapper .footer-down .footer-span { color: var(--secondary-color); }
+footer .wrapper .footer-list { padding: 20px 0; }
+
+footer .wrapper .footer-list li {
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 0.5px solid var(--quaternary-color);
+  color: var(--quaternary-color);
+  font-size: 14.5px;
+}
+
+footer .wrapper .footer-list li:last-child { border: none; }
+
+footer .wrapper h4 {
+  color: var(--secondary-color);
+  font-size: 23px;
+  font-weight: 900;
+}
+
+footer .wrapper .icon-list {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+footer .wrapper .icon-list a {
+  display: flex;
+  text-indent: -9999px;
+}
+
+footer .wrapper .icon-list a::before {
+  display: flex;
+  color: var(--secondary-color);
+  font-family: "FontAwesome";
+  font-size: 22px;
+  text-indent: 0;
+}
+
+footer .wrapper .icon-list .facebook::before { content: "\f09a"; }
+footer .wrapper .icon-list .instagram::before { content: "\f16d"; }
+footer .wrapper .icon-list .snapchat::before { content: "\f2ab"; }
+footer .wrapper .icon-list .twitter::before { content: "\f099"; }
+footer .wrapper figcaption { color: var(--quaternary-color); }
+/*=================================
+  footer styling ends here
+=================================*/
