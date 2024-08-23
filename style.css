@@ -233,7 +233,6 @@ Header styling starts here
  
  header {
   width: 100%;
-  position: absolute;
   top: 0%;
   z-index: 2;
   background-color: var(--primary-color);
@@ -276,21 +275,17 @@ Header styling starts here
  .header-right ul {
   display: flex;
   justify-content: space-between;
- }
- 
- .navbar {
-  display: flex;
-  justify-content: space-between;
+  gap: 20px;
  }
  
  .header-right ul li { text-align: center; }
  
- .header-right { width: 42%; }
- 
  .header-right {
+  display: flex;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
+  gap: 20px;
  }
  
  .header-right a { color: var(--secondary-color); }
@@ -353,7 +348,7 @@ Header styling starts here
  
  .banner h2 {
   color: var(--tertiary-color);
-  font-size: 47px;
+  font-size: 44px;
   font-weight: 900;
  }
  
@@ -452,4 +447,64 @@ Header styling starts here
  /*=================================
   footer styling ends here
  =================================*/
- 
+ .posts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 70px;
+}
+
+.post {
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post a{
+color: #000;
+font-weight: 900;
+}
+
+.post p{ font-size: 13px; }
+
+.single-post {
+  padding: 50px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 50px;
+}
+
+.single-post .post-thumbnail{ width: 35%; }
+.single-post a{ width: 100%; }
+
+.single-post h1{
+font-size: 30px;
+font-weight: bolder;
+}
+
+.single-excerpt{ font-size: 15px; }
+
+.single-ratings::before{
+  content: "\f005";
+  font-family: "FontAwesome";
+}
+
+.single-pricing::before{
+  content: "\e1bc";
+  font-family: "FontAwesome";
+}
+
+.single-detailes ,.single-country{ font-weight: 900; }
+.post-content , .country-content{ font-size: 14px; }
+.single-brand{ font-weight: 900; }
+
+.pagination{
+  margin: 31px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagination a{ color: #000; }
